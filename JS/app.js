@@ -19,3 +19,11 @@ signupForm.addEventListener('submit', e => {
 		}, 2500)
 	}
 })
+
+signupForm.addEventListener('keyup', e => {
+	if (regEX.test(signupForm.username.value)) {
+		signupForm.username.setAttribute('class', 'success')
+	} else {
+		signupForm.username.setAttribute('class', 'error')
+	}
+})
