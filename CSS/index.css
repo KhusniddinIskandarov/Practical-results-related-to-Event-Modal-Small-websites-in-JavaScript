@@ -1,53 +1,60 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
-
+/* Umumiy reset va font */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: #fff;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
 	height: 100vh;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	background: linear-gradient(43deg, #413f81 0%, #c850c0 46%, #ffcc70 100%);
+	justify-content: center;
+	background: linear-gradient(135deg, #4facfe, #00f2fe);
 }
 
+/* Container */
 .container {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-	background-color: rgba(204, 204, 204, 0.5);
-	padding: 15px 25px;
-	border-radius: 10px;
-	user-select: none;
-	cursor: pointer;
-	font-weight: 500;
-	transition: all 0.5s;
-	margin-bottom: 25px;
+	background: #ffffff;
+	padding: 40px 60px;
+	border-radius: 20px;
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	transition: transform 0.3s ease;
 }
 
 .container:hover {
-	box-shadow: 0px 26px 70px 1px rgba(0, 0, 0, 0.4);
-	transform: scale(1.001);
+	transform: translateY(-5px);
 }
 
+/* Counter (h1) */
 .container h1 {
+	font-size: 4rem;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+/* Tugmalar */
+.container button {
+	background: #4facfe;
+	color: white;
+	border: none;
+	outline: none;
+	padding: 12px 25px;
+	margin: 0 10px;
+	font-size: 1.1rem;
 	font-weight: 500;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: 0.3s ease;
 }
 
-.copyright {
-	position: absolute;
-	bottom: 50px;
+.container button:hover {
+	background: #00c6ff;
+	transform: scale(1.05);
 }
 
-@media screen (max-width: 460px) {
-	.container h1 {
-		font-size: 22px;
-	}
+.container button:active {
+	transform: scale(0.95);
 }
