@@ -141,5 +141,6 @@
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.statusBar.visible": false,
 	"terminal.integrated.fontFamily": "MesloLGS NF",
-	"window.zoomLevel": 1
+	"window.zoomLevel": 1,
+	"liveServer.settings.port": 5501
 }
